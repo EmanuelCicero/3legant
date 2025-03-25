@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
+
+jobs:
+  build-server:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./server
+
+      - name: Run linter (server)
+        run: npm run lint
+        working-directory: ./server
+
+      - name: TypeScript compile check
+        run: npx tsc --noEmit
+        working-directory: ./server
+
+  build-client:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./client
+
+      - name: Run linter (client)
+        run: npm run lint
+        working-directory: ./client
+
+      - name: Run build
+        run: npm run build
+        working-directory: ./client
