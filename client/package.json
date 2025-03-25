@@ -5,7 +5,8 @@
     "start": "next start",
     "start:dev": "next dev --turbo",
     "build": "next build",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pre-commit": "npm run lint"
   },
   "dependencies": {
     "next": "15.2.4",

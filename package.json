@@ -1,0 +1,23 @@
+{
+  "name": "3legant",
+  "version": "0.0.1",
+  "private": true,
+  "description": "3legant is an e-commerce platform for clothing stores, providing a modern and intuitive experience for customers and sellers.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EmanuelCicero/3legant"
+  },
+  "workspaces":[
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start:dev": "npm run start:dev -w server & npm run start:dev -w client",
+    "prepare": "husky",
+    "prepare:client": "cd client && npm run pre-commit",
+    "prepare:server": "cd server && npm run pre-commit"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
