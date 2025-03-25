@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/EmanuelCicero/3legant"
   },
-  "workspaces":[
+  "workspaces": [
     "client",
     "server"
   ],
