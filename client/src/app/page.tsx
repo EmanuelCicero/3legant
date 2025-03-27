@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <div>Hello world!</div>
+      <div className="text-amber-900">Hello world!</div>
     </main>
   );
 }
