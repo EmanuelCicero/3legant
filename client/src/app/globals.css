@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 @tailwind utilities;
 
+:root {
+    font-family: var(--font-poppins), sans-serif;
+}
 
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@theme {
+    /* {Primary colors}: */
+    --color-primary: #000000;
+
+    /* {Secondary colors}: */
+    --color-secondary-blue: #377DFF;
+    --color-secondary-green: #38CB89;
+    --color-secondary-green: #FFAB00;
+    --color-secondary-green: #FF5630;
+
+    /* {Neutral colors}: */
+    --color-neutral-100: #FEFEFE;
+    --color-neutral-200:##F3F5F7; 
+    --color-neutral-300: #E8ECEF;
+    --color-neutral-400: #6C7275;
+    --color-neutral-500: #343839;
+    --color-neutral-600: #232627;
+    --color-neutral-700: #141718;
 }
