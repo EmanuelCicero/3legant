@@ -12,6 +12,7 @@ export default [
     },
     rules: {
       ...tsPlugin.configs.recommended.rules,
+      "quotes": ["error", "single"]
     },
   },
 ];
