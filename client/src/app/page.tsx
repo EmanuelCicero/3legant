@@ -1,7 +1,9 @@
+import Footer from '../components/footer';
+
 export default function Home() {
   return (
-    <main>
-      <div className="text-amber-900">Hello world!</div>
+    <main className='container max-w-full'>
+      <Footer />
     </main>
   );
 }

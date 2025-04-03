@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@tailwind utilities;
+
+:root {
+    font-family: var(--font-poppins), sans-serif;
+}
+
+@theme {
+    /* {Primary colors}: */
+    --color-primary: #000000;
+
+    /* {Secondary colors}: */
+    --color-secondary-blue: #377DFF;
+    --color-secondary-green: #38CB89;
+    --color-secondary-green: #FFAB00;
+    --color-secondary-green: #FF5630;
+
+    /* {Neutral colors}: */
+    --color-neutral-100: #FEFEFE;
+    --color-neutral-200:##F3F5F7; 
+    --color-neutral-300: #E8ECEF;
+    --color-neutral-400: #6C7275;
+    --color-neutral-500: #343839;
+    --color-neutral-600: #232627;
+    --color-neutral-700: #141718;
+}
