@@ -3,7 +3,7 @@ import InstagramIcon from '../assets/instagram-icon.svg';
 import FacebookIcon from '../assets/facebook-icon.svg';
 import YouTubeIcon from '../assets/youtube-icon.svg';
 
-export default function footer(){
+export default function Footer(){
   const NavLinks = () => (
     <ul className="flex md:flex-row gap-10 text-neutral-300 text-sm text-center flex-col py-10">
       {['Home', 'Shop', 'Product', 'Blog', 'Contact Us'].map((item) => (
@@ -46,26 +46,25 @@ export default function footer(){
           <p className="text-neutral-300 text-sm text-center">Gift & Decoration Store</p>
         </div>
         <nav className="md:w-fit w-full">
-          {NavLinks()}
+          <NavLinks />
         </nav>
       </div>
       <div className="container hidden md:flex border-t border-neutral-400 mx-auto justify-between py-5">
         <div className="flex flex-row gap-7 flex-wrap pr-3 max-w-[80%]">
           <p className="text-neutral-300">Copyright © 2025 3legant. All rights reserved</p>
-          {LegalLinks()}
+          <LegalLinks />
         </div>
-        {SocialLinks()}
+        <SocialLinks />
       </div>
 
       {/* Mobile */}
       <div className="md:hidden flex flex-col border-t border-neutral-400 mx-auto w-[80%] py-5 flex-wrap gap-8">
-        {SocialLinks()}
+        <SocialLinks />
         <div className="flex flex-row gap-7 flex-wrap justify-center">
-          {LegalLinks()}
+          <LegalLinks />
           <p className="text-neutral-300 text-center">Copyright © 2025 3legant. All rights reserved</p>
         </div>
       </div>
-
     </footer>
   );
 }
