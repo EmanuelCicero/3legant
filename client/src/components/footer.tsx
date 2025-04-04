@@ -38,7 +38,7 @@ export default function Footer(){
   };
 
   return(
-    <footer className="bg-neutral-700 text-white flex flex-col py-11 px-5">
+    <footer className="bg-neutral-800 text-white flex flex-col py-11 px-5">
       <div className="container mx-auto flex justify-between md:flex-nowrap flex-wrap">
         <div className="flex lg:flex-row flex-col lg:gap-8 gap-4 items-center md:m-0 mx-auto">
           <p className="text-2xl font-medium">3legant<span className="text-neutral-400">.</span></p> 
