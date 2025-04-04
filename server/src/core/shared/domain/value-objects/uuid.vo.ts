@@ -8,7 +8,7 @@ export class Uuid extends ValueObject {
     return new Map<string, Uuid>(uuids.map((uuid) => [uuid.id, uuid]));
   }
 
-  constructor(id: string) {
+  constructor(id?: string) {
     super();
     this.id = id || uuidv4();
     this.validate();
