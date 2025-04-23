@@ -11,7 +11,7 @@ export interface ProductCostructorProps{
   product_id: ProductId;
   name: string;
   description: string;
-  // category: CategoryJson;
+  category: CategoryJson;
   SKU: string;
   size: string[];
   price: string;
@@ -24,7 +24,7 @@ export interface ProductCostructorProps{
 export interface ProductCreateCommand {
   name: string;
   description: string;
-  // category: CategoryJson;
+  category: CategoryJson;
   SKU: string;
   size: string[];
   price: string;
@@ -35,7 +35,7 @@ export type ProductJson = EntityJSON<{
   product_id: string;
   name: string;
   description: string;
-  // category: CategoryJson;
+  category: CategoryJson;
   SKU: string;
   size: string[];
   price: string;
