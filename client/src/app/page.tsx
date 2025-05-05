@@ -1,5 +1,5 @@
 import Footer from '../components/footer';
-import Newsletter from '@/components/newsletter';
+import Newsletter from '../components/newsletter';
 
 export default function Home() {
   return (
